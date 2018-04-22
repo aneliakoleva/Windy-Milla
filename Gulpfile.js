@@ -7,13 +7,11 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
-    return gulp.src('./sass/**/*.scss')
+    return gulp
+        .src('./sass/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
+        .pipe(autoprefixer({browsers: ['last 2 versions'], cascade: false}))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./stylesheets/'));
 });
@@ -32,5 +30,5 @@ gulp.task('build', function () {
 });
 
 gulp.task('default', function () {
-    gulp.start('sass:watch');
+    gulp.start('watch');
 });
