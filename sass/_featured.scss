@@ -1,0 +1,36 @@
+.featured-products {
+    background-image: url('../images/border.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 100px;
+
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+.item-featured {
+
+    img {
+        width: 100%;
+        height: auto;
+    &:hover {
+        opacity: 0.9;
+    }
+
+    }
+}
+.descr-featured {
+    color: #1c1d1d;
+    text-decoration: none;
+    font-size: 1.25em;
+    text-align: center;
+    width: 100%;
+    display: block;
+
+    &:hover {
+        text-decoration: none;
+        color: #1c1d1d;
+    }
+}

@@ -1,0 +1,27 @@
+@import "slider.scss";
+@import "nav.scss";
+@import "bikes.scss";
+@import "featured.scss";
+@import "footer.scss";
+
+.story {
+    background: url('../images/whirlpool-full-hd-wallpaper.jpg');
+    background-size: cover;
+    background-position: left;
+
+
+    .story-content {
+        padding-top: 50px;
+
+
+        .image-story {
+            float: left;
+            width: 25%;
+        }
+        .info-story {
+            padding-left: 20px;
+            width: 75%;
+
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.site-nav {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    transition: background 0.5s ease-in-out;
+    background-color: rgba(9,9,9,0);
+
+    &.attached {
+        background: rgba(9,9,9,0.5);
+    }
+
+    .navbar-inverse {
+        background: transparent;
+    }
+
+    .header {
+        padding-top: 0;
+
+        img {
+            max-width: 280px;
+            color: white;
+        }
+    }
+}
+
+.navbar-inverse {
+    border: none;
+
+    ul {
+        padding: 18px 80px;
+    }
+}
+
+.dropdown {
+    &:hover {
+        .dropdown-menu {
+            display: block;
+        }
+    }
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.dark-blue-text {
+    color: #0A38F5;
+}
+
+.dark-pink-text {
+    color: #AC003A;
+}
+
+.dark-amber-text {
+    color: #ff6f00;
+}
+
+.dark-teal-text {
+    color: #004d40;
+}

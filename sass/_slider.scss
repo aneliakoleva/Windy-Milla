@@ -1,0 +1,50 @@
+.bx-wrapper {
+    margin-bottom: 0 !important;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: 5px !important;
+    padding-top: 20px;
+}
+
+.bx-viewport {
+    left: 0 !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.bx-wrapper .bx-pager a {
+    background: white !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.bx-wrapper .bx-pager .active {
+    background: transparent !important;
+    border: 2px solid white !important;
+    top: 2px !important;
+    position: relative !important;
+}
+.pager-links {
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 155px;
+    background-color: rgba(9,9,9,0.5);
+    bottom: 0px;
+    overflow: hidden;
+    border-top: 1px white solid;
+
+    a {
+        background-color: #fff;
+            padding: 12px 20px;
+            color: black;
+            text-transform: uppercase;
+            text-decoration: none;
+    }
+    h3 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: white;
+    }
+}
